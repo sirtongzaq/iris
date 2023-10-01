@@ -48,7 +48,7 @@ def main():
     sns.heatmap(corr_matrix, annot=True, cmap='coolwarm')
     st.pyplot(plt)
 
-    st.subheader("Species Counts")
+    st.subheader("Variety Counts")
     species_counts = filtered_data['variety'].value_counts()
     plt.figure(figsize=(8, 6))
     sns.barplot(x=species_counts.index, y=species_counts.values)
